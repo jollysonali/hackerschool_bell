@@ -59,6 +59,7 @@ exports.sonalisBadges = function (req, res) {
 
 exports.hsCheckins = function (req, res, io) {
   console.log(req.body.checkin);
+  console.log('this is a console log');
   io.sockets.emit('checkin');
 };
 
