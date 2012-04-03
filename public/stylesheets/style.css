@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#container{
+	padding: 20px;
+	margin: 1em;
+	font-family: 'Hevertica-Neue', Helvetica, Sans-Serif;
+	font-size: 2em;
+	color: black;
+	background-color: #1FD2FF;
+}
