@@ -56,9 +56,10 @@ exports.sonalisBadges = function (req, res) {
   });
 };
 
-exports.hsCheckins = function (req, res) {
-  //res.end(req.body.checkin);
-  console.log('got a checkin');
+
+exports.hsCheckins = function (req, res, io) {
+  console.log(req.body.checkin);
+  io.sockets.emit('checkin');
 };
 
 /*
