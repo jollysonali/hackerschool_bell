@@ -30,8 +30,7 @@ app.configure('production', function(){
 app.get('/', routes.index);
 app.get('/login', routes.login);
 app.get('/callback', routes.callback);
-app.get('/sonalisBadges', routes.sonalisBadges);
-//app.get('/badges', routes.getBadges);
+app.post('/hscheckins', routes.sonalisBadges);
 
 app.listen(process.env.PORT || 3000, function(){
    console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
