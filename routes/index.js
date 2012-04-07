@@ -18,6 +18,7 @@ exports.index = function(req, res) {
       reportError(test, error.message);
     }
     else {
+			
 			res.render('checkins.jade', { title: 'Checkins', checkins: data.hereNow.items });    
     }
   });	
