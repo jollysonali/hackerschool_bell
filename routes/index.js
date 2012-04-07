@@ -18,7 +18,7 @@ exports.index = function(req, res) {
       reportError(test, error.message);
     }
     else {
-			console.log(data.hereNow.items);
+			res.render('checkins.jade', { title: 'Checkins', checkins: data.hereNow.items });    
     }
   });	
   /*
@@ -65,7 +65,7 @@ exports.callback = function (req, res) {
     }
     else {
       // Save the accessToken and redirect.
-			console.log('--1-1-1-1-1-1-1-1-1', accessToken);
+			console.log('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', accessToken);
 			aToken = accessToken;
 			res.redirect('/');
     }
