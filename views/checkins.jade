@@ -1,5 +1,8 @@
 div#container
-  p Hacker School Checkins FOOOOOO
-  p
+  h3 Hacker School Checkins
     - each checkin in checkins
-      p #{checkin.user.firstName}
+      div.checkin(data-fsid='checkin.user.id')
+        h4 #{checkin.user.firstName}
+        img(src="#{checkin.user.photo}")
+      
+      
