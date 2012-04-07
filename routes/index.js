@@ -40,7 +40,6 @@ exports.callback = function (req, res) {
     }
     else {
       // Save the accessToken and redirect.
-			console.log('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', accessToken);
 			aToken = accessToken;
 			res.redirect('/');
     }
@@ -78,9 +77,3 @@ exports.hsCheckins = function (req, res, io) {
   console.log('this is a console log');
   io.sockets.emit('checkin', req.body.checkin);
 };
-
-
-/*
-
-- when the page loads get everyone who has checked into the venue 
-- listen and update when new checkins happen.
