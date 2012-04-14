@@ -7,7 +7,7 @@ var Foursquare = require('node-foursquare')(config);
 var aToken;
 
 //this function gets called when the homepage loads
-exports.index = function(req, res) {
+exports.home = function(req, res) {
 	//get from 4square api currently checked in users
 	//need an oauth token
   //console.log('===========', aToken);
@@ -16,7 +16,11 @@ exports.index = function(req, res) {
       reportError(test, error.message);
     }
     else {
-			res.render('checkins.jade', { title: 'Checkins', checkins: data.hereNow.items });    
+      if (req.url.indexOf('.json') !== -1){
+        res.send(JSON.stringify(data));
+      } else {
+       res.render('checkins.jade', { title: 'Checkins', checkins: data.hereNow.items });     
+      }
     }
   });	
 };
@@ -37,7 +41,7 @@ exports.callback = function (req, res) {
     else {
       // Save the accessToken and redirect.
 			aToken = accessToken;
-			res.redirect('/');
+			res.redirect('/home');
     }
   });
 };

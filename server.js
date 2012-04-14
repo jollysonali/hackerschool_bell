@@ -29,7 +29,8 @@ app.configure('production', function(){
 });
 
 // Routes
-app.get('/', routes.index);
+app.get('/home', routes.home);
+app.get('/home.json', routes.home);
 app.get('/login', routes.login);
 app.get('/callback', routes.callback);
 app.post('/hscheckins', function(req, res){
