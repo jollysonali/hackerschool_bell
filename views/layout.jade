@@ -4,10 +4,5 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/socket.io/socket.io.js');
-    script(type='text/javascript')
-      var socket = io.connect('http://'+document.location.host);
-      socket.on('checkin', function(data){
-        console.log('got a checkin!');
-        console.log(JSON.parse(data));
-      });
+    script(src='/public/js/hackerbell.js');
   body!= body 

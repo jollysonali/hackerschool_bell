@@ -14,3 +14,19 @@ a {
 	color: black;
 	background-color: #1FD2FF;
 }
+
+#feeds{
+  width:1000px;
+  margin-left:200px;
+  margin-right:auto;
+  margin-top:40px;
+  border-top:#333 dashed 1px;
+}
+.item{
+   margin:0;
+   width:980px;
+   height:80px;
+   font-size:30px;
+   border-bottom:#333 dashed 1px;
+   padding:0px 10px 0px 10px;
+}
