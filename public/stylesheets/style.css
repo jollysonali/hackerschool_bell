@@ -2,6 +2,12 @@ body {
   padding: 50px;
 }
 
+p {
+  font-family: "helvetica-neue", helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
 a {
   color: #00B7FF;
 }

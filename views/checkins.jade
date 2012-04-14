@@ -3,6 +3,5 @@ div#container
     - each checkin in checkins
       div#feeds
         div.item(data-fsid='checkin.user.id')
-          p #{checkin.user.firstName}
           img(src="#{checkin.user.photo}")
-          p #{checkin.createdAt}
+          p #{checkin.user.firstName} checked in at: #{checkin.createdAt}
