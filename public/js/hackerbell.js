@@ -5,11 +5,11 @@ socket.on('checkin', function(data){
 });
 
 
-function updateCheckins(data){
+//function updateCheckins(data){
   //get dom checkins
   //if live checkin is not in dom then add 
   
-}
+//}
 
 
 
@@ -22,7 +22,7 @@ function updateCheckins(data){
 
 
 
-var delay = 2000; // you can change it
+/*var delay = 2000; // you can change it
 var count = 5; // How much items to animate
 var showing = 3; //How much items to show at a time
 var i = 0;
@@ -43,4 +43,4 @@ function shift() {
 
 $(document).ready(function() {
   setTimeout('shift()', delay);
-});
+}); */
