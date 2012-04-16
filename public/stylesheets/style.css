@@ -3,7 +3,7 @@ body {
 }
 
 p {
-  font-family: "helvetica-neue", helvetica, sans-serif;
+  font-family: "Helvetica-Neue", helvetica, sans-serif;
   font-size: 1em;
   font-weight: 300;
 }
@@ -13,7 +13,7 @@ a {
 }
 
 h3 {
-  font-family: "helvetica-neue", helvetica, sans-serif;
+  font-family: "Helvetica-Neue", helvetica, sans-serif;
   font-size: .5em;
   font-weight: 100;
   text-transform: uppercase;
@@ -22,6 +22,7 @@ h3 {
 }
 
 #container {
+  overflow: hidden;
 	padding: 20px;
 	margin: 1em;
 	font-family: 'Hevertica-Neue', Helvetica, Sans-Serif;
@@ -31,14 +32,13 @@ h3 {
 }
 
 #feeds {
+  overflow: hidden;
   margin-top:40px;
-  border-top:#333 dashed 1px;
 }
 .checkin {
    float: left;
    display: block;
    margin-right: 25px;
-   height:80px;
    font-size:2em;
    padding:0px 10px 0px 10px;
 }
