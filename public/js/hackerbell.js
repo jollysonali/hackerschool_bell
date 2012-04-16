@@ -7,25 +7,6 @@ socket.on('checkin', function(data){
   $("#feeds").prepend("<div class='item'><img src='" + data.user.photo + "'><p>" + data.user.firstName + "</p></div>");
 });
 
-
-
-//function updateCheckins(data){
-  //get dom checkins
-  //if live checkin is not in dom then add 
-  
-//}
-
-
-
-
-
-
-
-
-
-
-
-
 /*var delay = 2000; // you can change it
 var count = 5; // How much items to animate
 var showing = 3; //How much items to show at a time
