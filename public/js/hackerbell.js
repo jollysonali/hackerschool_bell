@@ -4,10 +4,10 @@ socket.on('checkin', function(data){
   //console.log(JSON.parse(data));
   data = JSON.parse(data);
   console.log(data);
-  $("#feeds").prepend("<div class='item'><img src='" + data.user.photo + "'><p>" + data.user.firstName + "</p></div>");
+  $('#feeds').prepend('<div class="item"><img src="' + data.user.photo + '"><p>' + data.user.firstName + '</p></div>');
 });
 
-/*var delay = 2000; // you can change it
+var delay = 2000; // you can change it
 var count = 5; // How much items to animate
 var showing = 3; //How much items to show at a time
 var i = 0;
@@ -28,4 +28,4 @@ function shift() {
 
 $(document).ready(function() {
   setTimeout('shift()', delay);
-}); */
+});

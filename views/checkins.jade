@@ -1,6 +1,7 @@
-h3 Hacker School Checkins
-  div#feeds
-    - each checkin in checkins
-      div.item(data-fsid='checkin.user.id')
-        img(src="#{checkin.user.photo}")
-        p #{checkin.user.firstName}
+div#container
+  h3 Hacker School Checkins
+    div#feeds
+      - each checkin in checkins
+        div.item(data-fsid='checkin.user.id')
+          img(src="#{checkin.user.photo}")
+          p #{checkin.user.firstName}
