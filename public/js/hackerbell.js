@@ -4,6 +4,6 @@ socket.on('checkin', function(data){
   //console.log(JSON.parse(data));
   data = JSON.parse(data);
   console.log(data);
-  $('#feeds').prepend('<div class="item" style="display:none"><img src="' + data.user.photo + '"><p>' + data.user.firstName + '</p></div>');
-  $('#feeds .item:first-child').slideDown();
+  $('#feeds').prepend('<div class="checkin" style="display:none"><img src="' + data.user.photo + '"><p>' + data.user.firstName + '</p></div>');
+  $('#feeds .checkin:first-child').slideDown();
 });

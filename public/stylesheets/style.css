@@ -35,10 +35,10 @@ h3 {
   border-top:#333 dashed 1px;
 }
 .checkin {
-   margin:0;
-   /*width:980px;*/
+   float: left;
+   display: block;
+   margin-right: 25px;
    height:80px;
-   font-size:30px;
-   border-bottom:#333 dashed 1px;
+   font-size:2em;
    padding:0px 10px 0px 10px;
 }
