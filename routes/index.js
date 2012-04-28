@@ -19,10 +19,11 @@ exports.home = function(req, res) {
       if (req.url.indexOf('.json') !== -1){
         res.send(JSON.stringify(data));
       } else {
-       res.render('checkins.jade', { title: 'Checkins', checkins: data.hereNow.items });     
+        console.log(JSON.stringify(data));
+       res.render('checkins.jade', { title: 'Checkins', checkins: data.hereNow.items });
       }
     }
-  });	
+  });
 };
 
 exports.login = function(req, res) {
