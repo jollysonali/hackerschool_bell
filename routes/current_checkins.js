@@ -4,11 +4,7 @@ exports.current_checkins = function(req, res) {
       reportError(test, error.message);
     }
     else {
-      if (req.url.indexOf('.json') !== -1){
         res.send(JSON.stringify(data));
-      } else {
-       res.render('checkins.jade', { title: 'Checkins', checkins: data.hereNow.items });
-      }
     }
   });
 };
