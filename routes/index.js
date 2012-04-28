@@ -52,3 +52,14 @@ exports.hsCheckins = function (req, res, io) {
   console.log('this is a console log');
   io.sockets.emit('checkin', req.body.checkin);
 };
+
+exports.current_checkins = function(req, res) {
+  Foursquare.Venues.getHereNow("4f3933eae4b017ad7cdce1fd", null, aToken, function (error, data) {
+    if(error) {
+      reportError(test, error.message);
+    }
+    else {
+        res.send(JSON.stringify(data));
+    }
+  });
+};
