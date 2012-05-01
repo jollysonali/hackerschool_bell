@@ -33,8 +33,6 @@ app.get('/', routes.home);
 app.get('/home', routes.home);
 app.get('/login', routes.login);
 app.get('/callback', routes.callback);
-app.get('/current_checkins', routes.current_checkins);
-
 app.post('/hscheckins', function(req, res){
   routes.hsCheckins(req, res, io);
 });
