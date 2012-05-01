@@ -5,12 +5,12 @@
 }
 
 body {
-  padding: 10px;
   border-top: 5px solid black;
+  padding-bottom: 20px;
 }
 
 p {
-  font-family: "Helvetica-Neue", helvetica, sans-serif;
+  font-family: "DeliciousRoman", "Helvetica-Neue", helvetica, sans-serif;
   font-size: .5em;
   font-weight: 300;
 }
@@ -20,12 +20,11 @@ a {
 }
 
 h3 {
-  font-family: "Helvetica-Neue", helvetica, sans-serif;
-  font-size: .5em;
+  font-family: "DeliciousRoman", "Helvetica-Neue", helvetica, sans-serif;
+  font-size: 1em;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 20px;
 }
 
 #logo {
@@ -34,14 +33,13 @@ h3 {
 
 #container {
   overflow: hidden;
-	font-family: 'Hevertica-Neue', Helvetica, Sans-Serif;
+	font-family: "DeliciousRoman", 'Hevertica-Neue', Helvetica, Sans-Serif;
 	font-size: 2em;
 	color: black;
 }
 
 #feeds {
   overflow: hidden;
-  margin-top:40px;
 }
 .checkin {
    float: left;
