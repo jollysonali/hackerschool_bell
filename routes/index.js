@@ -30,7 +30,7 @@ exports.home = function(req, res) {
 							          function (error, data) {   
 													                  io.sockets.emit('update', data);
 																						          })  
-	} , 1000 );
+	} , 120000 );
 };
 
 exports.login = function(req, res) {
