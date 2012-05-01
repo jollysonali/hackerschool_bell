@@ -12,8 +12,10 @@ body {
 
 p {
   font-family: "DeliciousRoman", "Helvetica-Neue", helvetica, sans-serif;
-  font-size: .5em;
-  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 a {
@@ -46,7 +48,5 @@ h3 {
 .checkin {
    float: left;
    display: block;
-   margin-right: 25px;
-   font-size:2em;
-   padding:0px 10px 0px 10px;
+   margin: 1em;
 }
