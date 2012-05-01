@@ -7,3 +7,8 @@ socket.on('checkin', function(data){
   $('#feeds .checkin:first-child').fadeIn(3000);
   //check feeds if current 
 });
+socket.on('update' function(data){
+  console.log('got some update');
+  data = JSON.parse(data);
+  console.log(data);
+}
