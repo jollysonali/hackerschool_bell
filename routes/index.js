@@ -3,8 +3,8 @@
  */
 var config = require('../config');
 
-var Foursquare = require('node-foursquare')(config);
-var aToken;
+Foursquare = require('node-foursquare')(config);
+aToken = "";
 
 //this function gets called when the homepage loads
 exports.home = function(req, res) {
@@ -24,6 +24,13 @@ exports.home = function(req, res) {
       }
     }
   });
+  setInterval(function() {
+		    console.log("doing it");
+				    Foursquare.Venues.getHereNow("4f3933eae4b017ad7cdce1fd", null, aToken, 
+							          function (error, data) {   
+													                  io.sockets.emit('update', data);
+																						          })  
+	} , 1000 );
 };
 
 exports.login = function(req, res) {
