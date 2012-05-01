@@ -5,6 +5,7 @@
 }
 
 body {
+  margin: 0;
   border-top: 5px solid black;
   padding-bottom: 20px;
 }
@@ -28,6 +29,8 @@ h3 {
 }
 
 #logo {
+  border-top: 5px solid black;
+
   text-align: center;
 }
 
