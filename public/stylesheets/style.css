@@ -29,11 +29,9 @@ h3 {
 
 #container {
   overflow: hidden;
-	padding: 20px;
 	font-family: 'Hevertica-Neue', Helvetica, Sans-Serif;
 	font-size: 2em;
 	color: black;
-	/*background-color: #1FD2FF;*/
 	border-top: 5px solid black;
 }
 

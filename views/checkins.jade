@@ -1,7 +1,7 @@
-div#container
-  img(src="HS_logo_4sq.png")
+#container
+  img(src="images/HS_logo_4sq.png")
   h3 Hacker School Checkins
-    div#feeds
+    #feeds
       - each checkin in checkins
         div.checkin(data-fsid='checkin.user.id')
           img(src="#{checkin.user.photo}")
