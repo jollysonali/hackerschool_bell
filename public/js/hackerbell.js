@@ -11,4 +11,4 @@ socket.on('update' function(data){
   console.log('got some update');
   data = JSON.parse(data);
   console.log(data);
-}
+});
